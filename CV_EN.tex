@@ -1,0 +1,82 @@
+% Exemple de CV utilisant la classe moderncv
+% Style classic en bleu
+% Article complet : https://blog.madrzejewski.com/creer-cv-elegant-latex-moderncv/
+
+\documentclass[12pt,a4paper]{moderncv}
+\moderncvtheme[blue]{classic}
+\usepackage[utf8]{inputenc}
+\usepackage[inline]{enumitem}
+% Marge aux 4 coins de la page, ici elles sont réduites pour gagner de la place
+\usepackage[top=1.0cm, bottom=1.0cm, left=1.6cm, right=1.6cm]{geometry}
+% Largeur de la colonne de gauche pour les dates
+\setlength{\hintscolumnwidth}{2.7cm}
+
+\firstname{Marc}
+\familyname{Veysseyre}
+\title{Engineer Student in Computer science}
+\address{22 rue de Fenoul}{31500 Toulouse}{France}
+\email{marc.veysseyre@telecom-st-etienne.fr}
+\social[linkedin][www.linkedin.com/in/marc-veysseyre-7b1126222/]{marc-veysseyre}
+% \homepage{www.madrzejewski.com}
+\mobile{+33 6 95 91 95 19}
+\extrainfo{21 years old}
+\photo[80pt]{Marc_image}
+
+\begin{document}
+\maketitle
+% Marge négative entre le titre et la partie expérience, pour gagner de la place
+\vspace*{-2.5\baselineskip}
+
+\section{Experiences}
+\cventry{January 2022}{\underline{Internship on Python development (Backend)}}{ilem Group}{\newline Plan-Les-Ouates}{Switzerland}{
+\begin{itemize}%
+\item 4 weeks of internship to develop autonomously an checkin application.
+\item \textbf{Development} : \textit{Python, framework Flask, web HTML\texttt{/}CSS\texttt{/}JS}
+\item Skills developed : Learning Flask framework, Time Managing, Looking for feedback from Software's stakeholders.\newline
+\end{itemize}}
+
+\cventry{January 2022\\ - April 2023}{\underline{Treasurer in a Junior Enterprise}}{Inspire}{Saint-Étienne}{France}{
+\begin{itemize}%
+\item I've joined the Junior Enterprise in a position that requires rigour and good budget's management with hazards. Also I used my competence in IT to automate some tasks.
+\item \textbf{Development} : \textit{VBA \textit{(Microsoft Excel)}, Python}\newline
+\end{itemize}}
+
+\cventry{2020 -- 2021}{\underline{TIPE project}}{CPGE}{Paris}{France}{
+\begin{itemize}%
+\item Software simulating road traffic in order to implement algorithms of shortest path to optimize road traffic in a context home-work scenario.
+\item \textbf{Development} : \textit{C++, Python}\newline
+\end{itemize}}
+
+% \cventry{2018 - 2019}{Projet de Science de l'ingénieur}{Terminale S}{Toulouse}{France}{
+% \begin{itemize}%
+% \item Programmation sur Arduino pour le contrôle qualité des grains de café sur un tapis de production pour signaliser toute anomalie tout en communiquant des statistiques de production sur un site internet.
+% \item \textbf{Development} : \textit{C, HTML/CSS}\newline
+% \end{itemize}}
+
+
+\section{Studies}
+\cventry{2021 -- 2024}{\underline{Engineering school}}{Telecom Saint-Étienne}{}{}{Engineering degree in IT and Networks}
+% {
+% \begin{itemize}
+% \item IT : Web development, software enginneering, Unix, Script development, Admin system
+% \item Network : Web development, software enginneering 
+% \end{itemize}
+% }
+\cventry{2019 -- 2021}{\underline{CPGE MP}}{Lycée Janson de Sailly \textit{(Paris)} }{}{}{Preparatory courses for the engineering schools \\ Mathematics . Physics . Computer science}
+\cventry{2016 -- 2019}{\underline{High school}}{Lycée Général Saint Joseph \textit{(Toulouse)} }{}{}{Scientific Baccalaureate, 2019 \\ Aeronautical initiation certificate (BIA in French), 2017}
+
+\section{Skills}
+\cvdoubleitem{\underline{OS}}{Windows, macOS, Debian, Ubuntu}{\underline{Virtualization}}{VMWare, VirtualBox}
+\cvitem{\underline{Programming}}{\textbf{Python, C, C++}, C\#, \textbf{Java}, OCaml, \textbf{HTML, CSS}, Javascript, Node.js, SQL, Matlab, Bash, LaTeX}
+%\cvitem{\underline{Admin. services}}{Apache, Nginx, Varnish, WHM\texttt{/}cPanel, MySQL, Bind, Postfix, Dovecot, Exim}
+%\cvitem{\underline{Admin. fichiers}}{LVM, mdadm, Cloisonnement Cloudlinux}
+%\cvitem{\underline{Sécurité}}{Notions SELinux, CSF, iptables, firewalld}
+%\cvlanguage{\underline{Français}}{Langue maternelle}{}
+\cvlanguage{\underline{English}}{B2 (TOEIC)}{}%-- TOEIC X \texttt{/} 990
+\cvlanguage{\underline{Others}}{German : B1, \ French : mother language}{}%-- TOEIC X \texttt{/} 990
+
+
+\section{Interests}
+\cvitem{}{Computer Science, Aeronautics, Space, Literature}
+\cvitem{}{Hiking, Trail Running, Ski}
+\end{document}

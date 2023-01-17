@@ -1,0 +1,76 @@
+% Exemple de CV utilisant la classe moderncv
+% Style classic en bleu
+% Article complet : https://blog.madrzejewski.com/creer-cv-elegant-latex-moderncv/
+
+\documentclass[12pt,a4paper]{moderncv}
+\moderncvtheme[blue]{classic}
+\usepackage[utf8]{inputenc}
+\usepackage[inline]{enumitem}
+% Marge aux 4 coins de la page, ici elles sont réduites pour gagner de la place
+\usepackage[top=1.0cm, bottom=1.0cm, left=1.6cm, right=1.6cm]{geometry}
+% Largeur de la colonne de gauche pour les dates
+\setlength{\hintscolumnwidth}{2.7cm}
+
+\firstname{Marc}
+\familyname{Veysseyre}
+\title{Étudiant Ingénieur en Informatique}
+\address{22 rue de Fenoul}{31500 Toulouse}
+\email{marc.veysseyre@telecom-st-etienne.fr}
+\social[linkedin][www.linkedin.com/in/marc-veysseyre-7b1126222/]{marc-veysseyre}
+% \homepage{www.madrzejewski.com}
+\mobile{+33 6 95 91 95 19}
+\extrainfo{21 ans}
+\photo[80pt]{Marc_image}
+
+\begin{document}
+\maketitle
+% Marge négative entre le titre et la partie expérience, pour gagner de la place
+\vspace*{-2.5\baselineskip}
+
+\section{Expériences}
+\cventry{Janvier 2022}{\underline{Stage de développement en Python (Backend)}}{ilem Group}{\newline Plan-Les-Ouates}{Suisse}{
+\begin{itemize}%
+\item 4 semaines de stage pour développer en semi-autonomie une application de checkin.
+\item \textbf{Développement} : \textit{Python, framework Flask, web HTML\texttt{/}CSS\texttt{/}JS}
+\item Compétences développées : Apprentisage d'un framework, Gestion du temps, Recherche d'avis des parties prenantes du logiciel.\newline
+\end{itemize}}
+
+\cventry{Janvier 2022\\ - Avril 2023}{\underline{Trésorier à Inspire}}{Junior-Entreprise}{Saint-Étienne}{France}{
+\begin{itemize}%
+\item J’ai rejoint la J.E. dans un poste nécessitant une rigueur et une bonne gestion du budget en s’adaptant aux aléas. Aussi je mets à profit mes compétences en informatique pour automatiser certaines tâches.
+\item \textbf{Développement} : \textit{VBA \textit{(Microsoft Excel)}, Python}\newline
+\end{itemize}}
+
+\cventry{2020 -- 2021}{\underline{Projet de TIPE}}{CPGE}{Paris}{France}{
+\begin{itemize}%
+\item Programme simulant le trafic routier afin d’y tester des algorithmes de plus court chemin pour optimiser la circulation du trafic dans un scénario domicile-travail.
+\item \textbf{Développement} : \textit{C++, Python}\newline
+\end{itemize}}
+
+% \cventry{2018 - 2019}{Projet de Science de l'ingénieur}{Terminale S}{Toulouse}{France}{
+% \begin{itemize}%
+% \item Programmation sur Arduino pour le contrôle qualité des grains de café sur un tapis de production pour signaliser toute anomalie tout en communiquant des statistiques de production sur un site internet.
+% \item \textbf{Développement} : \textit{C, HTML/CSS}\newline
+% \end{itemize}}
+
+
+\section{Formations}
+\cventry{2021 -- 2024}{\underline{École d'ingénieur}}{Télécom Saint-Étienne}{}{}{Spécialité Informatique et Réseaux}
+\cventry{2019 -- 2021}{\underline{Classe Préparatoire}}{Lycée Janson de Sailly \textit{(Paris)} }{}{}{MPSI-MP Option Informatique}
+\cventry{2016 -- 2019}{\underline{Lycée Général}}{Lycée Saint Joseph \textit{(Toulouse)} }{}{}{Baccalauréat Scientifique (mention bien), 2019 \\ Brevet d’Initiation Aéronautique (mention bien), 2017}
+
+\section{Compétences}
+\cvdoubleitem{\underline{OS}}{Windows, macOS, Debian, Ubuntu}{\underline{Virtualisation}}{VMWare, VirtualBox}
+\cvitem{\underline{Programmation}}{\textbf{Python, C, C++}, C\#, \textbf{Java}, OCaml, \textbf{HTML, CSS}, Javascript, SQL, Matlab, Bash, LaTeX}
+%\cvitem{\underline{Admin. services}}{Apache, Nginx, Varnish, WHM\texttt{/}cPanel, MySQL, Bind, Postfix, Dovecot, Exim}
+%\cvitem{\underline{Admin. fichiers}}{LVM, mdadm, Cloisonnement Cloudlinux}
+%\cvitem{\underline{Sécurité}}{Notions SELinux, CSF, iptables, firewalld}
+%\cvlanguage{\underline{Français}}{Langue maternelle}{}
+\cvlanguage{\underline{Anglais}}{B2 (TOEIC)}{}%-- TOEIC X \texttt{/} 990
+\cvlanguage{\underline{Autres}}{Allemand : B1, \ Français : langue maternelle}{}%-- TOEIC X \texttt{/} 990
+
+
+\section{Centres d'intérêt}
+\cvitem{}{Informatique, Aéronautique, Spatial, Littérature}
+\cvitem{}{Randonnée, Trail, Ski}
+\end{document}
